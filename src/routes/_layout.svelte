@@ -1,22 +1,28 @@
 <script>
-	import Nav from '../components/Nav.svelte';
-
-	export let segment;
+	import Invoice from '../components/Invoice.svelte';
+	import Dashboard from '../components/Dashboard.svelte';
+	// export let segment;
 </script>
 
 <style>
 	main {
 		position: relative;
-		max-width: 56em;
 		background-color: white;
-		padding: 2em;
 		margin: 0 auto;
-		box-sizing: border-box;
+	}
+	.flex-50 {
+		flex: 0 0 50%;
+		flex-flow: wrap;
 	}
 </style>
 
-<Nav {segment}/>
+<!-- <Nav {segment}/> -->
 
-<main>
-	<slot></slot>
+<main class="block md:flex">
+	<section class="flex-50 p-5 bg-blue-800">
+		<Invoice></Invoice>
+	</section>
+	<section class="p-5 flex-50">
+		<Dashboard></Dashboard>
+	</section>
 </main>

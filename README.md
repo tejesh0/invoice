@@ -1,3 +1,15 @@
+Todo:
+[ ] Create History items component
+[ ] Use <slot> to insert Lineitem & History components
+
+
+# Attributions:
+
+Flaticon tick-inside-circle.svg
+```html
+Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+```
+
 # sapper-template
 
 The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
